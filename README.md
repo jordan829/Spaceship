@@ -1,4 +1,4 @@
-nstall GLUT before running:
+Install GLUT before running:
 
 Make a folder called c:\glut and download from the following link: http://ivl.calit2.net/wiki/images/0/0a/Glut-3.7.6-bin.zip
 
