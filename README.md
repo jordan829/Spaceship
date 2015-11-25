@@ -9,3 +9,12 @@ Open the new folder (glut-3.7.6-bin) and verify that you see the following five 
 Move glut32.dll to c:\Windows\System32 (or SysWOW64 for 64bit) so that all programs can access it. If you don't have write privileges for this directory, you can put the .dll file into the directory your executable (.exe) resides in. This is typically your Debug or Release directory, just below your project directory.
 
 Create a new directory under c:\glut\glut-3.7.6-bin and name it "GL". Move glut.h to this new directory (should be "c:\glut\glut-3.7.6-bin\GL").
+
+
+How to Play:
+
+Left Arrow: Move left
+Right Arrow: Move Right
+Spacebar: Shoot
+
+Objective: Shoot stuff for points. If an enemy ship passes, lose one life (5 total).
