@@ -14,7 +14,9 @@ Create a new directory under c:\glut\glut-3.7.6-bin and name it "GL". Move glut.
 How to Play:
 
 Left Arrow: Move left
+
 Right Arrow: Move Right
+
 Spacebar: Shoot
 
 Objective: Shoot stuff for points. If an enemy ship passes, lose one life (5 total).
