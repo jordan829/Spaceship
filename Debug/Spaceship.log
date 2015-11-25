@@ -1,0 +1,79 @@
+﻿Build started 11/24/2015 5:01:28 PM.
+     1>Project "C:\Users\Jordan\Documents\Dev Stuff\Github\Spaceship\Spaceship.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\glut\glut-3.7.6-bin" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Camera.cpp Color.cpp Drawable.cpp DrawData.cpp Globals.cpp Light.cpp main.cpp Material.cpp Matrix4.cpp OBJObject.cpp ParticleEffect.cpp ParticleEmitter.cpp RandomNum.cpp Shader.cpp Background.cpp Sphere.cpp Texture.cpp UpdateData.cpp Vector3.cpp Vector4.cpp Window.cpp
+         Window.cpp
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\window.cpp(480): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\window.cpp(484): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\window.cpp(562): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\window.cpp(567): warning C4018: '<' : signed/unsigned mismatch
+         Vector4.cpp
+         Vector3.cpp
+         UpdateData.cpp
+         Texture.cpp
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\texture.cpp(89): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\texture.cpp(106): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(304) : see declaration of 'sscanf'
+         Sphere.cpp
+         Background.cpp
+         Shader.cpp
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\shader.cpp(92): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+         RandomNum.cpp
+         ParticleEmitter.cpp
+         ParticleEffect.cpp
+         OBJObject.cpp
+         Matrix4.cpp
+         Material.cpp
+         main.cpp
+         Light.cpp
+         Globals.cpp
+         DrawData.cpp
+         Drawable.cpp
+         Color.cpp
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\color.cpp(60): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\color.cpp(64): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+         Compiling...
+         Camera.cpp
+         Generating Code...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\glut\glut-3.7.6-bin" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt GLee.c
+         GLee.c
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\glee.c(15923): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\string.h(112) : see declaration of 'strcpy'
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\glee.c(16006): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+     1>c:\users\jordan\documents\dev stuff\github\spaceship\glee.c(16010): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(356) : see declaration of 'sprintf'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"Debug\Spaceship.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\glut\glut-3.7.6-bin" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBC.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"Debug\Spaceship.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Debug\Spaceship.lib" /MACHINE:X86 /SAFESEH Debug\Camera.obj
+         Debug\Color.obj
+         Debug\Drawable.obj
+         Debug\DrawData.obj
+         Debug\GLee.obj
+         Debug\Globals.obj
+         Debug\Light.obj
+         Debug\main.obj
+         Debug\Material.obj
+         Debug\Matrix4.obj
+         Debug\OBJObject.obj
+         Debug\ParticleEffect.obj
+         Debug\ParticleEmitter.obj
+         Debug\RandomNum.obj
+         Debug\Shader.obj
+         Debug\Background.obj
+         Debug\Sphere.obj
+         Debug\Texture.obj
+         Debug\UpdateData.obj
+         Debug\Vector3.obj
+         Debug\Vector4.obj
+         Debug\Window.obj
+         GLee.lib
+     1>Camera.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Spaceship.vcxproj -> C:\Users\Jordan\Documents\Dev Stuff\Github\Spaceship\Debug\Spaceship.exe
+     1>Done Building Project "C:\Users\Jordan\Documents\Dev Stuff\Github\Spaceship\Spaceship.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.98
