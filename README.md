@@ -20,3 +20,5 @@ Right Arrow: Move Right
 Spacebar: Shoot
 
 Objective: Shoot stuff for points. If an enemy ship passes, lose one life (5 total).
+
+Shooting red enemies rewards the player with one life. Maximum life count is 5
