@@ -55,8 +55,6 @@ void OBJObject::draw(DrawData& data)
 	//glLoadMatrixf(toWorld.ptr());
     
     glBegin(GL_TRIANGLES);
-    
-	glColor3f(1, 1, 1);
 
 	Face* face;
 	

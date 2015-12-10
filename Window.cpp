@@ -29,6 +29,9 @@ int lifeTracker = 5;
 int myScore = 0;
 int elapsedTime = 0;
 
+Color white(0xffffffff);
+Color red(0xff0000ff);
+
 string gameOver = "Game Over";
 string instruct = "Press Space to Continue";
 string score = "Score: ";
@@ -40,6 +43,7 @@ int mPositions[MAX];	//Missle positions
 
 Matrix4 enemies[MAX];
 int ePositions[MAX];	//Enemy Positions
+int givesLife[MAX];		//Marks special life giving enemies
 
 Matrix4 explosions[MAX];
 int exPositions[MAX];	//Explosion positions
@@ -343,6 +347,10 @@ void Window::spawnEnemy()
 	{
 		enemies[position].identity();
 
+		//Each enemy has a random chance to spawn as a life giving enemy
+		if (!(rand()%6))	//NOTE: Better determining function can probably be used. 6 works best for some reason
+			givesLife[position] = 1;
+
 		//Keep within window frame dimensions (positive / negative X-bounds)
 		float xPos = rand() % (2*RBOUND) + LBOUND;
 		xyTrans.makeTranslate(xPos, ESPAWN, 0);
@@ -369,6 +377,7 @@ void Window::animateEnemies()
 			if(position[1] <= FLOOR)
 			{
 				ePositions[i] = 0; //Delete
+				givesLife[i] = 0;
 
 				//Lose a life
 				lifeTracker--;
@@ -378,6 +387,12 @@ void Window::animateEnemies()
 			{
 				//Place at origin
 				Globals::enemy.toWorld.identity();
+
+				//Life giving enemies are indicated by a red color
+				if (givesLife[i])
+					Globals::enemy.material.color = red;
+				else
+					Globals::enemy.material.color = white;
 
 				//Rotate to nose-down position
 				Matrix4 rotate;
@@ -516,6 +531,15 @@ void Window::hitDetector()
 
 						mPositions[i] = 0;	//Destroy missle
 						ePositions[j] = 0;	//Destroy enemy
+
+						//Destroying a life giving enemy rewards player with 1 life
+						//Number of lives is capped at 5
+						if (givesLife[j] && lifeTracker < 5)
+						{
+							givesLife[j] = 0;	//Remove special indicator
+							lifeTracker++;
+						}
+
 						myScore++;			//Increase score
 					}
 				}
@@ -558,6 +582,7 @@ void Window::gameOverScreen()
 
 	glTranslatef(-40, 0, 0);
 	glScalef(0.1, 0.1, 0.1);
+	glColor3f(1, 1, 1);
 
 	for(int i = 0; i < gameOver.length(); i++)
 		glutStrokeCharacter(GLUT_STROKE_ROMAN, gameOver[i]);

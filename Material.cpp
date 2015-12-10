@@ -19,7 +19,7 @@ Material::Material()
     
     //Set the initial color to a random pastel color
     //Can be removed once materials are implemented
-    color = Color::randomPastel();
+    //color = Color::randomPastel();
 }
 
 Material::~Material()
