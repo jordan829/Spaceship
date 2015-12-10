@@ -72,6 +72,7 @@ void Window::initialize(void)
 		mPositions[i] = 0;
 		ePositions[i] = 0;
 		exPositions[i] = 0;
+		givesLife[i] = 0;
 	}
 	/////////////////////
 
