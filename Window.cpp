@@ -558,21 +558,11 @@ void Window::hitDetector()
 	}
 }
 
-int Window::checkDistance(Vector3 posA, Vector3 posB)
+float Window::checkDistance(Vector3 posA, Vector3 posB)
 {
-	int posX_A, posX_B;
-	int posY_A, posY_B;
-	int distX, distY, distance;
-
-	posX_A = posA[0];
-	posX_B = posB[0];
-	posY_A = posA[1];
-	posY_B = posB[1];
-
-	//Pythagorean theorem to find distance
-	distX = abs(posX_A - posX_B);
-	distY = abs(posY_A - posY_B);
-	distance = sqrt( pow(distX, 2) + pow(distY, 2) );
+	float distance;
+	Vector3 distanceVec = posB - posA;
+	distance = distanceVec.magnitude();
 
 	return distance;
 }

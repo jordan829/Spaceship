@@ -37,7 +37,7 @@ public:
 	static void updateTimers();
 	static void drawHUD();
 	static void hitDetector();
-	static int checkDistance(Vector3 posA, Vector3 posB);
+	static float checkDistance(Vector3 posA, Vector3 posB);
 	static void gameOverScreen();
 };
 
