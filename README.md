@@ -11,6 +11,9 @@ Move glut32.dll to c:\Windows\System32 (or SysWOW64 for 64bit) so that all progr
 Create a new directory under c:\glut\glut-3.7.6-bin and name it "GL". Move glut.h to this new directory (should be "c:\glut\glut-3.7.6-bin\GL").
 
 
+NOTE: Play on 60Hz. Have not yet implemented upport for other framrates
+
+
 How to Play:
 
 Left Arrow: Move left
